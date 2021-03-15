@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta author="DhonatanJoseildo">
+    <title>Pokemon Evolution</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="author" content="Dhonatan">
+</head>
+
+<body>
+
+    <header>
+            <div id="logo">
+                <h1><a href="/index.html">Pokemon Evolution</a></h1>
+            </div>
+        <div class="rede-social">
+            <a href="#"><img src="setIcones/icone-facebook.png" alt="Facebook"></a>
+
+            <a href="#"><img src="setIcones/icone-twitter.png" alt="Twitter"></a>
+
+            <a href="#"><img src="setIcones/icone-instagram.png" alt="Instagram"></a>
+
+            <a href="#"><img src="setIcones/icone-discord.png" alt="Discord"></a>
+        </div>
+
+    </header>
+
+    <main>
+        <nav>
+            <div class="navbar">
+
+                <a href="noticias.html">NOTÍCIAS</a>
+                <a href="conta.html">CONTA</a>
+                <a href="download.html">BAIXAR</a>
+                <a href="#">FÓRUM</a>
+                <a href="guias.html">GUIAS</a>
+                <a href="galería.html">GALERÍA</a>
+                <a href="supporte.html">SUPORTE</a>
+            </div>
+        </nav>
+
+        <section class="infosite">
+
+            <div class="divpokemon">
+                <h2 class="moldh2">Diversidades de Pokemon</h2>
+                <!--           imagens fake         -->
+                <div class="imagens">
+                    <picture>
+                        <source media="(min-width: 1300px)" srcset="/imagens/subs.png">
+                        <source media="(min-width: 1000px)" srcset="/imagens/subs01.png">
+                        <img src="/imagens/subs02.png" alt="imagem fake">
+                    </picture>
+                    <picture>
+                        <source media="(min-width: 1300px)" srcset="/imagens/subs.png">
+                        <source media="(min-width: 1000px)" srcset="/imagens/subs01.png">
+                        <img src="/imagens/subs02.png" alt="imagem fake">
+                    </picture>
+                    <picture>
+                        <source media="(min-width: 1300px)" srcset="/imagens/subs.png">
+                        <source media="(min-width: 1000px)" srcset="/imagens/subs01.png">
+                        <img src="/imagens/subs02.png" alt="imagem fake">
+                    </picture>
+                </div>
+
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Id optio suscipit saepe consectetur
+                    excepturi
+                    omnis eligendi adipisci doloremque ut dolorem consequatur nihil, illum obcaecati accusantium
+                    accusamus
+                    rem, facere ipsam distinctio!</p>
+            </div>
+
+            <div class="divpokemon">
+                <h2 class="moldh2">Profições Para todo Gosto</h2>
+                <div class="profmold">
+                    <a href="#">ENGINER</a>
+                    <a href="#">TEACHER</a>
+                    <a href="#">STYLIST</a>
+                    <a href="#">ADVENTURE</a>
+                </div>
+
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, minima iusto molestias dolorem dolor
+                    labore, quo esse sint ut possimus ea. Cum hic atque reprehenderit nesciunt iste natus, qui nisi.</p>
+
+                <br>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus laborum numquam mollitia!
+                    Officiis, cum at ad veritatis itaque eveniet ea eius excepturi magnam voluptatibus aspernatur
+                    quaerat praesentium nihil quos reiciendis.
+                </p>
+                <br>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum nihil officiis in laudantium ad,
+                    expedita saepe sapiente itaque praesentium eligendi, sit incidunt error fugiat tenetur sunt odit,
+                    unde voluptatem alias!</p>
+            </div>
+
+            <div class="divpokemon">
+                <h2 class="moldh2">Mega Evoluções</h2>
+                <div class="imagens">
+                    <picture>
+                        <source media="(min-width: 1300px)" srcset="/imagens/subs.png">
+                        <source media="(min-width: 1000px)" srcset="/imagens/subs01.png">
+                        <img src="/imagens/subs02.png" alt="imagem fake">
+                    </picture>
+
+                    <picture>
+                        <source media="(min-width: 1300px)" srcset="/imagens/subs.png">
+                        <source media="(min-width: 1000px)" srcset="/imagens/subs01.png">
+                        <img src="/imagens/subs02.png" alt="imagem fake">
+                    </picture>
+
+
+                    <picture>
+                        <source media="(min-width: 1300px)" srcset="/imagens/subs.png">
+                        <source media="(min-width: 1000px)" srcset="/imagens/subs01.png">
+                        <img src="/imagens/subs02.png" alt="imagem fake">
+                    </picture>
+
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A quas quam eos porro reprehenderit. Ipsam
+                    aperiam alias quae. Optio beatae doloremque nulla modi voluptate sed velit iste odit at recusandae.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <div class="modal-overlay ">
+        <div class="modal">
+            <h1>Cadastre-se</h1>
+            <form name="myform" action="#" onsubmit="return validateForm()">
+                <label for="fname">First name: </label>
+                <input type="text" id="fname" name="fname" placeholder="Kate" required><br>
+
+
+                <label for="lname">Last name: </label>
+                <input type="text" id="lname" name="lname" placeholder="Lingdoff" required><br>
+
+                <label for="tsexo">Sexo: </label>
+                <select name="tsexo" id="tsexo">
+                    <option value="masculino">Masculino</option>
+                    <option value="feminino">Feminino</option>
+                    <option value="outros">Outros</option>
+                </select><br>
+
+                <label for="age">Data-Nascimento: </label>
+                <input type="date" id="age" name="age" required><br>
+
+                <label for="email">E-mail: </label>
+                <input type="email" id="email" name="email" placeholder="example@hotmail.com" required><br>
+
+                <label for="pwd">Password: </label>
+                <input type="password" id="pwd" name="pwd" required><br>
+
+                <label for="vpwd">Validate Password: </label>
+                <input type="password" id="vpwd" name="vpwd"><br>
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <footer>
+        <p class="copyfoot">&copy; Pokemon Evolution</p>
+
+    </footer>
+</body>
+
+</html>

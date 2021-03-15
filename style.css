@@ -1,0 +1,260 @@
+:root{
+    --cinza-white: rgb(245, 245, 245);
+    --cinza-light: rgb(191, 198, 204);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 93,75%;
+    background:rgb(0, 0, 0);
+    background-image: linear-gradient(rgb(15, 16, 87), blue,rgb(15, 16, 87));
+}
+
+/*========== navigation =======*/
+.navbar {
+    display: flex;
+    background-color: #333;
+    justify-content: center;
+}
+
+.navbar a {
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+}
+
+.navbar :hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/*=====  header  =======*/
+header{
+    /* logo tiro border solid */
+    margin: auto;
+    border: 3px solid;
+    padding: 60px;
+    text-align: center;
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    
+    padding: 0.5rem;
+}
+
+#logo a{
+    background-color: #333;
+    color: white;
+    padding: 0.5rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0.3rem;
+    border: 1px solid black;
+}
+#logo :hover{
+    background-color: #ddd;
+    color: black;
+    border-radius: 0.3rem;
+}
+.rede-social{
+
+    background-color: var(--cinza-light);
+    max-width: 30%;
+    padding: 0;
+    text-align: center;
+    margin: auto;
+    position: absolute;
+    width: 100px;
+    height: 22px;
+    left: 80%;
+}
+main{
+
+    background-color: rgb(0, 0, 0);
+    margin: auto;
+    margin-bottom: -16px;
+    border-radius: 0.5rem 0.5rem 0 0;
+}
+.imagens{
+    
+    display: flex;
+    justify-content: center;
+    
+}
+.imagens picture{
+    padding: 0.5rem;
+}
+
+body {
+    font-family: Arial;
+    margin: 0;
+}
+
+.infosite{
+    
+    text-align: center;
+    margin: 1rem;
+}
+
+.divpokemon{
+    background-color: var(--cinza-white);
+    margin: auto;
+    padding: 1rem 1rem 1rem;
+    border: 5px solid;
+    border-color: var(--cinza-light);
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+    
+}
+
+/*  ======== Profisão / Working ======    */
+.profmold {
+
+    display: flex;
+    text-align: center;
+    margin: 0.5rem;
+    padding: 1rem;
+    justify-content: center;
+}
+.profmold a{
+    
+    border: 1px solid black;
+    border-radius: 0.5rem;
+    padding: 0.5rem 5rem;
+    margin: 1rem;   
+    text-decoration: none;
+    color: black;
+}
+
+.profmold a:hover{
+    background-color: #333;
+    color: white;
+
+}
+/* ========== Modal ================ */
+.modal-overlay {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0, 0.7);
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    opacity: 0;
+    visibility: hidden;
+}
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+    
+}
+.modal-overlay.active h1 {
+    text-align: center;
+}
+.modal{
+    background-color: #f0f2f5;
+    padding: 2.4rem;
+    position: relative;
+    border-radius: 0.25rem;
+}
+.modal h1{
+    margin-bottom: 25px;
+}
+/*========input=========*/
+
+input[ type = text ],select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+}
+
+input[type = date]{
+    width: 100%;
+    padding: 9px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+    border-radius: 0.25rem;
+    display: inline-block;
+    font-size: 16px;
+}
+input[type = email]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+}
+input[type = password]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 0.25rem;
+    box-sizing: border-box;
+}
+input[type = submit]{
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    margin-top: 25px;
+}
+input[type = submit]:hover{
+    background-color: #58c75c;
+}
+/*==========footer===============*/
+footer p{
+
+    text-align: center;
+    background-color: var(--cinza-white);
+    margin: auto;
+    border: 5px solid;
+    border-color: var(--cinza-light);
+    border-radius: 0.5rem;
+    margin: 1rem; 
+}
+footer{
+    background-color: black;
+    border: 3px solid;
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+}
+@media (max-width: 1100px){
+    .profmold{
+        flex-direction: column;
+        max-width: 70%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 700px){
+    .imagens, .navbar {
+        flex-direction: column;
+    }
+    .profmold{
+        max-width: 100%;
+    }
+}
+
