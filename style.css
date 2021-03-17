@@ -81,7 +81,6 @@ header{
     background-color:var(--cinza-light);
     border: 1px solid black;
     border-radius: 0.4rem;
-    transition-property: with;
 }
 .rede-social a:hover{
     background-color:white;
