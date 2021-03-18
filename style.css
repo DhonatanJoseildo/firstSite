@@ -11,7 +11,6 @@
 
 html{
     font-size: 93,75%;
-    background:rgb(0, 0, 0);
     background-image: linear-gradient(rgb(15, 16, 87), blue,rgb(15, 16, 87));
 }
 
@@ -88,7 +87,6 @@ header{
     height: 60px;
 }
 main{
-
     background-color: rgb(0, 0, 0);
     margin: auto;
     margin-bottom: -16px;
