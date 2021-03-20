@@ -35,7 +35,7 @@
             <div class="navbar">
 
                 <a href="noticias.html">NOTÍCIAS</a>
-                <a href="conta.html">CONTA</a>
+                <a href="#" onclick="Modal.open()" class="button new">CONTA</a>
                 <a href="download.html">BAIXAR</a>
                 <a href="#">FÓRUM</a>
                 <a href="guias.html">GUIAS</a>
@@ -48,7 +48,7 @@
 
             <div class="divpokemon">
                 <h2 class="moldh2">Diversidades de Pokemon</h2>
-                <!--           imagens fake         -->
+                <!--           imagen symbol         -->
                 <div class="imagens">
                     <picture>
                         <source media="(min-width: 1300px)" srcset="/imagens/subs.png">
@@ -160,6 +160,10 @@
                 <label for="vpwd">Validate Password: </label>
                 <input type="password" id="vpwd" name="vpwd"><br>
                 <input type="submit" value="Submit">
+
+                <div class="input-group actions" onclick="Modal.close()" class="button cancel">
+                    <a href="#" >Cancel</a>
+                </div>
             </form>
         </div>
     </div>
@@ -168,6 +172,8 @@
         <p class="copyfoot">&copy; Pokemon Evolution</p>
 
     </footer>
+
+    <script src="scriptP.js"></script>
 </body>
 
 </html>
