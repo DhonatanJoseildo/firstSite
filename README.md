@@ -7,7 +7,6 @@ JS em 5%
 
 ## update
 
-# inserido sidebar
-# melhorada a performace em mobile/menu navegação
-# em fase de aperfeiçoamento.
-
+- melhorada o side-bar
+- melhorado o menu mobile (em fase de auteração)
+- pequenas auteraçoes em cores.
