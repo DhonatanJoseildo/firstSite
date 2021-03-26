@@ -37,9 +37,9 @@
                 <ul>
                     <li><a href="noticias.html">NOTÍCIAS</a></li>
                     <li class="dropdown">
-                        <a href="#" onclick="Modal.open()" class="button new">ACESSO</a>
+                        <a href="#">ACESSO</a>
                         <div class="dropdown-content">
-                            <a href="#">Cadastre-se</a>
+                            <a href="#" onclick="Modal.open()" class="button new">Cadastre-se</a>
                             <a href="#">Login</a>
                             <a href="#">Recuperar senha</a>
                         </div>
@@ -55,7 +55,7 @@
                             <a href="#">4 Guia</a>
                             <a href="#">5 Guia</a>
                         </div>
-                        
+
                     </li>
                     <li><a href="galeria.html">GALERÍA</a></li>
                     <li><a href="supporte.html">SUPORTE</a></li>
@@ -153,12 +153,12 @@
         <div class="modal">
             <h1>Cadastre-se</h1>
             <form name="myform" action="#" onsubmit="return validateForm()">
-                <label for="fname">First name: </label>
-                <input type="text" id="fname" name="fname" placeholder="Kate" required><br>
 
+                <label for="fname">First name: </label>
+                <input type="text" id="fname" name="firstName" placeholder="Kate" required><br>
 
                 <label for="lname">Last name: </label>
-                <input type="text" id="lname" name="lname" placeholder="Lingdoff" required><br>
+                <input type="text" id="lname" name="lastName" placeholder="Lingdoff" required><br>
 
                 <label for="tsexo">Sexo: </label>
                 <select name="tsexo" id="tsexo">
@@ -178,10 +178,14 @@
 
                 <label for="vpwd">Validate Password: </label>
                 <input type="password" id="vpwd" name="vpwd"><br>
-                <input type="submit" value="Submit">
+
+                <label for="vboot">Eu não sou um robô</label>
+                <input type="checkbox" name="verificarRobô" id="vboot" required value="OK">
+
+                <input type="submit" value="Submit" name="cadastro">
 
                 <div class="input-group actions" onclick="Modal.close()" class="button cancel">
-                    <a href="#" >Cancel</a>
+                    <a href="#">Cancel</a>
                 </div>
             </form>
         </div>
