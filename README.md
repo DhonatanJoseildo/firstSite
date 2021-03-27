@@ -10,3 +10,9 @@ JS em 5%
 - melhorada o side-bar
 - melhorado o menu mobile (em fase de auteração)
 - pequenas auteraçoes em cores.
+
+## atualização 
+
+- finalizado o buttao menu
+- adicionado o home page
+- melhorada a parte responsiva do menu

@@ -77,6 +77,11 @@ header{
     background-color: #333;
     display: flex;
     justify-content: center;
+
+}
+.navbar ul{
+   margin: auto;
+   justify-content: center;
 }
 label[for="bt_menu"]{
     padding: 5px;
@@ -98,6 +103,7 @@ label[for="bt_menu"]{
 /*  ===== dropdown =======  */
 
 ul{
+    display: flex;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -123,7 +129,7 @@ li a, .dropbtn{
 
 li:hover, .dropdown :hover .dropbtn{
     background-color: red;
-
+    border-bottom: 2px solid white;
 }
 
 li .dropdown{
@@ -160,7 +166,7 @@ main{
     background-color: rgb(0, 0, 0);
     margin: auto;
     margin-bottom: -16px;
-    border-radius: 0.5rem 0.5rem 0 0;
+    
 }
 .imagens{
     
@@ -343,6 +349,9 @@ footer{
 }
 
 @media (max-width: 1100px){
+    .navbar ul{
+        display: block;
+    }
     .profmold{
         flex-direction: column;
         max-width: 70%;
@@ -356,15 +365,15 @@ footer{
     }
     .navbar{
         margin-top: 5px;
-        margin-left: -100%;
+        margin-left: -120%;
         transition: all .4s;
     }
     #bt_menu:checked ~ .navbar{
-        margin-left: 0%;
+        margin-left: 0;
     }
     
     .imagens, .navbar ul li{
-        width: 100%;
+        
         float: none;
         flex-direction: column;
         text-align: center;
