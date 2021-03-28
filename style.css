@@ -220,7 +220,7 @@ main{
 
 }
 /* ========== Modal ================ */
-.modal-overlay {
+.modal-overlay{
     width: 100%;
     height: 100%;
 
@@ -237,7 +237,7 @@ main{
     opacity: 0;
     visibility: hidden;
 }
-.modal-overlay.active {
+.modal-overlay.active{
     opacity: 1;
     visibility: visible;
     
@@ -253,6 +253,49 @@ main{
 }
 .modal h1{
     margin-bottom: 25px;
+}
+
+/* =========== Modal01 ============ */
+.modal-overlay02 {
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0,0,0, 0.7);
+
+    position: fixed;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    
+    opacity: 0;
+    visibility: hidden;
+}
+
+.modal-overlay02.active {
+    opacity: 1;
+    visibility: visible;
+    
+}
+.modal fieldset{
+    margin: auto;
+    text-align: center;
+    
+}
+.modal fieldset input{
+    
+    width: 80%;
+}
+.modal fieldset legend{
+    margin-bottom: 1rem;
+}
+.loginAcesso .input-group.actions{
+    width: 80%;
+    text-align: center;
+    margin: auto;
+    margin-bottom: 1rem;
 }
 /*========input / button=========*/
 

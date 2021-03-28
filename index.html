@@ -43,7 +43,7 @@
                         <a href="#">ACESSO</a>
                         <div class="dropdown-content">
                             <a href="#" onclick="Modal.open()" class="button new">Cadastre-se</a>
-                            <a href="#">Login</a>
+                            <a href="#" onclick="Modal01.open()">Login</a>
                             <a href="#">Recuperar senha</a>
                         </div>
                     </li>
@@ -194,6 +194,29 @@
         </div>
     </div>
 
+    <div class="modal-overlay02 active">
+        <div class="modal">
+            <form action="#" name="login" onsubmit="">
+                <fieldset class="loginAcesso">
+                    <legend>Login</legend>
+
+                    <label for="login">Login</label><br>
+                    <input type="text" id="login" required><br>
+
+                    <label for="password">Senha</label><br>
+                    <input type="password" id="password" required>
+
+                    <input type="submit" id="submit" name="enviar" value="Logar">
+
+                    <div class="input-group actions" onclick="Modal01.close()" class="button cancel">
+                        <a href="#">Cancel</a>
+                    </div>
+                </fieldset>
+
+                
+            </form>
+        </div>
+    </div>
     <footer>
         <p class="copyfoot">&copy; Pokemon Evolution</p>
 

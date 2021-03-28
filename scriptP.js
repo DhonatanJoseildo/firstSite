@@ -14,3 +14,20 @@ const Modal = {
 
     }
 }
+const Modal01 = {
+    open(){
+        document
+        .querySelector('.modal-overlay02')
+        .classList
+        .add('active')
+
+    },
+
+    close(){
+        document
+        .querySelector('.modal-overlay02')
+        .classList
+        .remove('active')
+
+    }
+}

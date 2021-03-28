@@ -16,3 +16,7 @@ JS em 5%
 - finalizado o buttao menu
 - adicionado o home page
 - melhorada a parte responsiva do menu
+
+## atualização 1.5.0
+
+- adicionado o acesso ao login do cite
