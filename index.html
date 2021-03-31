@@ -155,7 +155,7 @@
     <div class="modal-overlay ">
         <div class="modal">
             <h1>Cadastre-se</h1>
-            <form name="myform" action="#" onsubmit="return validateForm()">
+            <form name="myform" action="" id="cadastro">
 
                 <label for="fname">First name: </label>
                 <input type="text" id="fname" name="firstName" placeholder="Kate" required><br>
@@ -177,16 +177,17 @@
                 <input type="email" id="email" name="email" placeholder="example@hotmail.com" required><br>
 
                 <label for="pwd">Password: </label>
-                <input type="password" id="pwd" name="pwd" required><br>
+                <input type="password" id="pwd" name="pwd" required autocomplete="on"><br>
 
                 <label for="vpwd">Validate Password: </label>
-                <input type="password" id="vpwd" name="vpwd"><br>
+                <input type="password" id="vpwd" name="vpwd" required autocomplete="on"><br>
 
                 <label for="vboot">Eu não sou um robô</label>
                 <input type="checkbox" name="verificarRobô" id="vboot" required value="OK">
 
-                <input type="submit" value="Submit" name="cadastro">
+                <input type="submit" value="Enviar Cadastro" name="cadastro" onclick="enviarCadastro()">
 
+                <span id="mensagem"></span>
                 <div class="input-group actions" onclick="Modal.close()" class="button cancel">
                     <a href="#">Cancel</a>
                 </div>
@@ -194,25 +195,29 @@
         </div>
     </div>
 
-    <div class="modal-overlay02 active">
+    <div class="modal-overlay02 ">
         <div class="modal">
             <form action="#" name="login" onsubmit="">
                 <fieldset class="loginAcesso">
                     <legend>Login</legend>
 
                     <label for="login">Login</label><br>
-                    <input type="text" id="login" required><br>
+                    <input type="text" id="login" required placeholder="Email"><br>
 
                     <label for="password">Senha</label><br>
-                    <input type="password" id="password" required>
+                    <input type="password" id="password" required autocomplete="on">
 
-                    <input type="submit" id="submit" name="enviar" value="Logar">
+                    <input type="submit" id="submit" name="submit" value="Logar" onclick="acesso()">
 
                     <div class="input-group actions" onclick="Modal01.close()" class="button cancel">
                         <a href="#">Cancel</a>
                     </div>
                 </fieldset>
+                <!--
+                    clickar submit -> envio os dados para um object
 
+                    retorne uma mensagem de (Cadastro completo)
+                -->
                 
             </form>
         </div>
