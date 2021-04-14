@@ -29,15 +29,37 @@
 
     <main>
         <nav>
-            <div class="navbar">
+            <input type="checkbox" id="bt_menu">
+            <label for="bt_menu">&#9776</label>
 
-                <a href="noticias.html">NOTÍCIAS</a>
-                <a href="conta.html">CONTA</a>
-                <a href="download.html">BAIXAR</a>
-                <a href="#">FÓRUM</a>
-                <a href="guias.html">GUIAS</a>
-                <a href="galeria.html">GALERÍA</a>
-                <a href="supporte.html">SUPORTE</a>
+            <div class="navbar">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="noticias.html">NOTÍCIAS</a></li>
+                    <li class="dropdown">
+                        <a href="#">ACESSO</a>
+                        <div class="dropdown-content">
+                            <a href="#" onclick="Modal.open()" class="button new">Cadastre-se</a>
+                            <a href="#" onclick="Modal01.open()">Login</a>
+                            <a href="#">Recuperar senha</a>
+                        </div>
+                    </li>
+                    <li><a href="download.html">BAIXAR</a></li>
+                    <li><a href="#">FÓRUM</a></li>
+                    <li class="dropdown">
+                        <a href="guias.html" class="dropbtn">GUIAS</a>
+                        <div class="dropdown-content">
+                            <a href="#">1 Guia</a>
+                            <a href="#">2 Guia</a>
+                            <a href="#">3 Guia</a>
+                            <a href="#">4 Guia</a>
+                            <a href="#">5 Guia</a>
+                        </div>
+
+                    </li>
+                    <li><a href="galeria.html">GALERÍA</a></li>
+                    <li><a href="supporte.html">SUPORTE</a></li>
+                </ul>
             </div>
         </nav>
     </main>

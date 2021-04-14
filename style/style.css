@@ -368,6 +368,13 @@ input[type = submit]:hover{
 .input-group.actions:hover {
     background: rgb(110, 110, 110);
 }
+.modal-overlay02 form{
+    text-align: 4;
+}
+#mensagemLogin{
+    color: red;
+    font-size: 20px;
+}
 /*==========footer===============*/
 footer p{
 
