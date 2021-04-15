@@ -20,3 +20,6 @@ JS em 5%
 ## atualização 1.5.0
 
 - adicionado o acesso ao login do cite
+
+## atualização 1.5.5
+- pequena refatoração front/style
