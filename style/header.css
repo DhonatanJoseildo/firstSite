@@ -1,0 +1,53 @@
+/*=====  header  =======*/
+header{
+    /* logo tiro border solid */
+    margin: auto;
+    padding: 60px;
+    text-align: center;
+    background-image: linear-gradient(rgb(15, 16, 87), blue,rgb(15, 16, 87));
+}
+
+#logo{
+    display: flex;
+    justify-content: center;
+    
+    padding: 0.5rem;
+}
+
+#logo a{
+    background-color: #333;
+    color: white;
+    padding: 0.5rem;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 0.3rem;
+    border: 1px solid black;
+}
+#logo :hover{
+    background-color: #ddd;
+    color: black;
+    border-radius: 0.3rem;
+}
+.rede-social{
+
+    display: flex;
+    align-items: center;
+    
+    margin: auto;
+    position:absolute;
+    left:80%;
+
+}   
+.rede-social a{
+    display: flex;
+    padding: 0.25rem;
+    margin-left: 0.5rem;
+    background-color:var(--cinza-light);
+    border: 1px solid black;
+    border-radius: 0.4rem;
+}
+.rede-social a:hover{
+    background-color:white;
+    width: 60px;
+    height: 60px;
+}

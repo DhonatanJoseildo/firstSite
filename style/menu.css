@@ -1,0 +1,87 @@
+/*========= navegação/ menu*/
+.navbar{
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+
+}
+.navbar ul{
+   margin: auto;
+   justify-content: center;
+}
+label[for="bt_menu"]{
+    padding: 5px;
+    font-family: Arial;
+    color: white;
+    background-color: #333;
+    text-align: center;
+    font-size: 30px;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+}
+#bt_menu {
+    display: none;
+}
+label[for="bt_menu"]{
+    display: none;
+}
+/*  ===== dropdown =======  */
+
+ul{
+    display: flex;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: #333;
+    width: auto;
+    width: 100%;
+}
+
+li{
+    float: left;
+    
+}
+
+li a, .dropbtn{
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    width: 150px;
+}
+
+li:hover, .dropdown :hover .dropbtn{
+    background-color: red;
+    border-bottom: 2px solid white;
+}
+
+li .dropdown{
+    display: inline-block;
+    position: relative;
+
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+}
+.dropdown-content a{
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+.dropdown-content a:hover{
+    background-color: #dad7d7;
+}
+.dropdown:hover .dropdown-content {
+    display: block;
+}
