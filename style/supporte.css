@@ -1,0 +1,23 @@
+
+.containerInfo{
+    background-color: rgba(240, 240, 240, 0.808);
+    margin: auto;
+    border: 1px solid black;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    max-width: 60%;
+}
+.help-support h2{
+    font-size: 30px;
+    text-align: center;
+    padding-bottom: 1rem;
+    margin-top: 1rem;
+}
+.containerInfo span{
+    font-size: 20px;
+    border-bottom: 2px solid black;
+}
+.containerInfo p{
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+}

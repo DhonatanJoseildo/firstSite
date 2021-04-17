@@ -1,0 +1,48 @@
+@media (max-width: 1100px){
+    .navbar ul{
+        display: block;
+    }
+    .profmold{
+        flex-direction: column;
+        max-width: 70%;
+        margin: auto;
+    }
+}
+
+@media (max-width: 800px){
+    label[for="bt_menu"]{
+        display: block;
+    }
+    .navbar{
+        margin-top: 5px;
+        margin-left: -120%;
+        transition: all .4s;
+    }
+    #bt_menu:checked ~ .navbar{
+        margin-left: 0;
+    }
+    
+    .imagens, .navbar ul li{
+        
+        float: none;
+        flex-direction: column;
+        text-align: center;
+    }
+    .navbar ul .dropdown-content{
+        position: static;
+        overflow: hidden;
+        max-height: 0;
+        transition: all .4s;
+    }
+    .navbar ul li:hover .dropdown-content{
+        height: auto;
+        max-height: 250px;
+    }
+    .dropdown-content a{
+        width: 100%;
+        text-align: center;
+    }
+    .profmold{
+        max-width: 100%;
+    }
+}
