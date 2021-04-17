@@ -23,3 +23,7 @@ JS em 5%
 
 ## atualização 1.5.5
 - pequena refatoração front/style
+
+## atualização 1.5.6
+- melhorado dropdown
+- melhorado pequenos detalhes de interação com menu
