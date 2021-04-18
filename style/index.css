@@ -59,27 +59,21 @@ main{
 }
 
 /*==========footer===============*/
-footer p{
-
-    text-align: center;
-    margin: auto;
-    border: none;
-    padding-top: 10px;
-    color: white;
-    height: 100px;
-}
-footer ul{
-    text-align: start;
-    padding-left: 1rem;
-    color: white;
-    list-style-type: none;
-    
-}
-footer{
+.footer-index{
     background-color: black;
     padding-top: 1rem;
     
 }
+.footer-index p{
 
-
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    color: white;
+    border-bottom: 1px solid white;
+    width: 20%;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    font-size: 20px;
+}
 

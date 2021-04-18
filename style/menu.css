@@ -28,7 +28,7 @@ label[for="bt_menu"]{
 }
 /*  ===== dropdown =======  */
 
-ul{
+.navbar ul{
     display: flex;
     list-style-type: none;
     margin: 0;
@@ -39,7 +39,7 @@ ul{
     width: 100%;
 }
 
-li{
+.navbar li{
     float: left;
     
 }
@@ -53,12 +53,12 @@ li a, .dropbtn{
     width: 150px;
 }
 
-li:hover, .dropdown :hover .dropbtn{
+.navbar li:hover, .dropdown :hover .dropbtn{
     background-color: red;
     
 }
 
-li .dropdown{
+.navbar li .dropdown{
     display: inline-block;
     position: relative;
 

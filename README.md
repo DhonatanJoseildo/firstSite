@@ -27,3 +27,8 @@ JS em 5%
 ## atualização 1.5.6
 - melhorado dropdown
 - melhorado pequenos detalhes de interação com menu
+
+## atualização 1.5.7
+- completo support
+- completo galeria
+- melhorado footer
