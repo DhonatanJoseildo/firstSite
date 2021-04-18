@@ -1,0 +1,30 @@
+body {
+    background-color: black;
+}
+
+.conteudo {
+    color: white;
+    text-align: center;
+}
+.conteudo h1{
+    font-size: 30px;
+    margin: auto;
+    border-bottom: 1px solid white;
+    width: 25%;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+    padding: 0.5rem;
+}
+.noticias{
+    background-color: white;
+    color: black;
+    width: 50%;
+    margin: auto;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 0.5rem;
+}
+.noticias h2{
+    font-size: 25px;
+    padding-bottom: 1rem;
+}
