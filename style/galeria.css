@@ -4,16 +4,20 @@
     grid-template-columns: auto auto auto auto;
     background-color: rgba(0, 0, 0, 0.87);
     padding: 30px;
-    gap: 50px 30px;
+    gap: 40px;
+    justify-content: center;
 }
 
 .grid-pokemon{
+    
     background-color: rgb(67, 124, 247);
     font-size: 30px;
-    padding: 150px;
     text-align: center;
-    border: 1px solid rgba(0, 0, 0, 0.808);
     border-radius: 0.5rem;
+    padding: 150px 100px;
+    margin: auto;
+    width: 350px;
+    height: 380px;
     
 }
 .title-galeria{

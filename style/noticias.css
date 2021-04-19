@@ -28,3 +28,20 @@ body {
     font-size: 25px;
     padding-bottom: 1rem;
 }
+.footer-index{
+    background-color: black;
+    padding-top: 1rem;
+    
+}
+.footer-index p{
+
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    color: white;
+    border-bottom: 1px solid white;
+    width: 20%;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    font-size: 20px;
+}

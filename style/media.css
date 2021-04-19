@@ -1,3 +1,4 @@
+/* -----------header / menu -------*/
 @media (max-width: 1100px){
     .navbar ul{
         display: block;
@@ -44,5 +45,22 @@
     }
     .profmold{
         max-width: 100%;
+    }
+}
+/* ----------- galeria -------*/
+@media (max-width: 1500px){
+    .grid-container{
+        grid-template-columns: auto auto auto;
+    }
+}
+
+@media (max-width: 1200px){
+    .grid-container{
+        grid-template-columns: auto auto;
+    }
+}
+@media (max-width: 800px){
+    .grid-container{
+        grid-template-columns: auto;
     }
 }

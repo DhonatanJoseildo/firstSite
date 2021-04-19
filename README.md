@@ -32,3 +32,5 @@ JS em 5%
 - completo support
 - completo galeria
 - melhorado footer
+## atualização 1.5.8
+- aplicado responsivo na galeria
