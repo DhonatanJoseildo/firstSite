@@ -162,10 +162,10 @@
             <form name="myform" action="" id="cadastro">
 
                 <label for="fname">First name: </label>
-                <input type="text" id="fname" name="firstName" placeholder="Kate" required><br>
+                <input type="text" id="fname" name="firstName" placeholder="ex: Kate" required><br>
 
                 <label for="lname">Last name: </label>
-                <input type="text" id="lname" name="lastName" placeholder="Lingdoff" required><br>
+                <input type="text" id="lname" name="lastName" placeholder="ex: wilson" required><br>
 
                 <label for="tsexo">Sexo: </label>
                 <select name="tsexo" id="tsexo">
@@ -181,10 +181,10 @@
                 <input type="email" id="email" name="email" placeholder="example@hotmail.com" required><br>
 
                 <label for="pwd">Password: </label>
-                <input type="password" id="pwd" name="pwd" required autocomplete="on"><br>
+                <input type="password" id="pwd" name="pwd" placeholder="Senha" required autocomplete="on"><br>
 
                 <label for="vpwd">Validate Password: </label>
-                <input type="password" id="vpwd" name="vpwd" required autocomplete="on"><br>
+                <input type="password" id="vpwd" name="vpwd" placeholder="Confirme a Senha" required autocomplete="on"><br>
 
                 <label for="vboot">Eu não sou um robô</label>
                 <input type="checkbox" name="verificarRobô" id="vboot" required value="OK">
@@ -203,13 +203,13 @@
         <div class="modal">
             <form action="#" name="login" onsubmit="">
                 <fieldset class="loginAcesso">
-                    <legend>Login</legend>
+                    <legend>Acesso</legend>
 
                     <label for="login">Login</label><br>
                     <input type="text" id="login" required placeholder="Email"><br>
 
                     <label for="password">Senha</label><br>
-                    <input type="password" id="password" required autocomplete="on">
+                    <input type="password" id="password" placeholder="Senha" required autocomplete="on">
 
                     <input type="submit" id="submit" name="submit" value="Logar" onclick="acesso()">
 

@@ -34,3 +34,6 @@ JS em 5%
 - melhorado footer
 ## atualização 1.5.8
 - aplicado responsivo na galeria
+## atualização 1.5.9
+- Criada a pagina downloader
+- Pequenas auterações

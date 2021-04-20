@@ -1,0 +1,58 @@
+
+body{
+    background-color: black;
+}
+.downloader{
+    background-color: white;
+    margin: auto;
+    text-align: center;
+    max-width: 50%;
+    border: 3px solid rgb(77, 75, 75);
+    margin-top: 4rem;
+    border-radius: 0.5rem;
+}
+.downloader div{
+    width: 60%;
+    margin: auto;
+    border: 2px solid rgb(77, 75, 75);
+    border-radius: 0.7rem;
+    margin-bottom: 3rem;
+    margin-top: 1rem;
+    padding: 1rem;
+    
+}
+.title-download{
+    font-size: 35px;
+    color: white;
+    margin: auto;
+    text-align: center;
+    margin-top: 4rem;
+    border-bottom: 1px solid white;
+    width: 25%;
+    padding-bottom: 1rem;
+}
+.downloader p{
+    padding: 1rem;
+}
+.downloader div a{
+    text-decoration: none;
+    color: rgb(35, 0, 231);
+    font-size: 20px;
+}
+.footer-index{
+    background-color: black;
+    padding-top: 1rem;
+    
+}
+.footer-index p{
+
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    color: white;
+    border-bottom: 1px solid white;
+    width: 20%;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    font-size: 20px;
+}
