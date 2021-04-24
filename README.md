@@ -37,3 +37,14 @@ JS em 5%
 ## atualização 1.5.9
 - Criada a pagina downloader
 - Pequenas auterações
+## atualização 1.6.0
+- implementado validações em Registro de conta
+-- criada class/construtor JS
+-- criada data-required
+-- criada data-min-length
+-- criada data-max-length
+-- criada data-only-letters
+-- criada data-email-validate
+-- criada data-equal
+-- criada data-password-validate
+-- criada as funções relativa a cada uma em JS.

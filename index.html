@@ -162,10 +162,10 @@
             <form name="myform" action="" id="cadastro">
 
                 <label for="fname">First name: </label>
-                <input type="text" id="fname" name="firstName" placeholder="ex: Kate" required><br>
+                <input type="text" id="fname" name="firstName" placeholder="ex: Kate" data-required data-min-length="3" data-max-length="16" data-only-letters><br>
 
                 <label for="lname">Last name: </label>
-                <input type="text" id="lname" name="lastName" placeholder="ex: wilson" required><br>
+                <input type="text" id="lname" name="lastName" placeholder="ex: wilson" data-required data-min-length="3" data-max-length="16" data-only-letters><br>
 
                 <label for="tsexo">Sexo: </label>
                 <select name="tsexo" id="tsexo">
@@ -178,25 +178,27 @@
                 <input type="date" id="age" name="age" required><br>
 
                 <label for="email">E-mail: </label>
-                <input type="email" id="email" name="email" placeholder="example@hotmail.com" required><br>
+                <input type="email" id="email" name="email" placeholder="example@hotmail.com" data-required data-min-length="3" data-email-validate><br>
 
                 <label for="pwd">Password: </label>
-                <input type="password" id="pwd" name="pwd" placeholder="Senha" required autocomplete="on"><br>
+                <input type="password" id="pwd" name="password" placeholder="Senha" data-required data-password-validate autocomplete="on"><br>
 
                 <label for="vpwd">Validate Password: </label>
-                <input type="password" id="vpwd" name="vpwd" placeholder="Confirme a Senha" required autocomplete="on"><br>
+                <input type="password" id="vpwd" name="passconfirmation" placeholder="Confirme a Senha" data-required autocomplete="on" data-equal="password"><br>
 
                 <label for="vboot">Eu não sou um robô</label>
-                <input type="checkbox" name="verificarRobô" id="vboot" required value="OK">
+                <input type="checkbox" name="verificarRobô" id="vboot" required value="OK"><br>
 
-                <input type="submit" value="Enviar Cadastro" name="cadastro" onclick="enviarCadastro()">
+                
+                <input type="submit" value="Enviar Cadastro" id="personCadastro">
 
-                <span id="mensagem"></span>
+                
                 <div class="input-group actions" onclick="Modal.close()" class="button cancel">
                     <a href="#">Cancel</a>
                 </div>
             </form>
         </div>
+        <p class="mensagemCadastro"></p>
     </div>
 
     <div class="modal-overlay02 ">
@@ -209,20 +211,15 @@
                     <input type="text" id="login" required placeholder="Email"><br>
 
                     <label for="password">Senha</label><br>
-                    <input type="password" id="password" placeholder="Senha" required autocomplete="on">
+                    <input type="password" id="password" placeholder="Senha" required autocomplete="on"><br>
 
+                    <span id="mensagemLogin"></span>
                     <input type="submit" id="submit" name="submit" value="Logar" onclick="acesso()">
 
                     <div class="input-group actions" onclick="Modal01.close()" class="button cancel">
                         <a href="#">Cancel</a>
                     </div>
                 </fieldset>
-                <span id="mensagemLogin"></span>
-                <!--
-                    clickar submit -> envio os dados para um object
-
-                    retorne uma mensagem de (Cadastro completo)
-                -->
                 
             </form>
         </div>

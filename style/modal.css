@@ -150,9 +150,17 @@ input[type = submit]:hover{
 .modal fieldset legend{
     margin-bottom: 1rem;
 }
-.loginAcesso .input-group.actions{
-    width: 80%;
+.input-group.actions{
     text-align: center;
     margin: auto;
     margin-bottom: 1rem;
+}
+.loginAcesso .input-group.actions{
+    width: 80%;
+}
+.loginAcesso {
+    min-width: 300px;
+}
+#cadastro {
+    max-width: 400px;
 }
