@@ -161,33 +161,49 @@
             <h1>Cadastre-se</h1>
             <form name="myform" action="" id="cadastro">
 
-                <label for="fname">First name: </label>
-                <input type="text" id="fname" name="firstName" placeholder="ex: Kate" data-required data-min-length="3" data-max-length="16" data-only-letters><br>
+                <div>
+                    <label for="fname">First name: </label>
+                    <input type="text" id="fname" name="firstName" placeholder="ex: Kate" data-required data-min-length="3" data-max-length="16" data-only-letters>
+                </div>
 
-                <label for="lname">Last name: </label>
-                <input type="text" id="lname" name="lastName" placeholder="ex: wilson" data-required data-min-length="3" data-max-length="16" data-only-letters><br>
+                <div>
+                    <label for="lname">Last name: </label>
+                    <input type="text" id="lname" name="lastName" placeholder="ex: wilson" data-required data-min-length="3" data-max-length="16" data-only-letters>
+                </div>
 
-                <label for="tsexo">Sexo: </label>
-                <select name="tsexo" id="tsexo">
-                    <option value="masculino">Masculino</option>
-                    <option value="feminino">Feminino</option>
-                    <option value="outros">Outros</option>
-                </select><br>
+                <div>
+                    <label for="tsexo">Sexo: </label>
+                    <select name="tsexo" id="tsexo">
+                        <option value="masculino">Masculino</option>
+                        <option value="feminino">Feminino</option>
+                        <option value="outros">Outros</option>
+                    </select>
+                </div>
 
-                <label for="age">Data-Nascimento: </label>
-                <input type="date" id="age" name="age" required><br>
+                <div>
+                    <label for="age">Data-Nascimento: </label>
+                    <input type="date" id="age" name="age" required><br>
+                </div>
 
-                <label for="email">E-mail: </label>
-                <input type="email" id="email" name="email" placeholder="example@hotmail.com" data-required data-min-length="3" data-email-validate><br>
+                <div>
+                    <label for="email">E-mail: </label>
+                    <input type="email" id="email" name="email" placeholder="example@hotmail.com" data-required data-min-length="3" data-email-validate><br>
+                </div>
 
-                <label for="pwd">Password: </label>
-                <input type="password" id="pwd" name="password" placeholder="Senha" data-required data-password-validate autocomplete="on"><br>
+                <div>
+                    <label for="pwd">Password: </label>
+                    <input type="password" id="pwd" name="password" placeholder="Senha" data-required data-password-validate autocomplete="on"><br>
+                </div>
 
-                <label for="vpwd">Validate Password: </label>
-                <input type="password" id="vpwd" name="passconfirmation" placeholder="Confirme a Senha" data-required autocomplete="on" data-equal="password"><br>
+                <div>
+                    <label for="vpwd">Validate Password: </label>
+                    <input type="password" id="vpwd" name="passconfirmation" placeholder="Confirme a Senha" data-required autocomplete="on" data-equal="password"><br>
+                </div>
 
-                <label for="vboot">Eu não sou um robô</label>
-                <input type="checkbox" name="verificarRobô" id="vboot" required value="OK"><br>
+                <div>
+                    <label for="vboot">Eu não sou um robô</label>
+                    <input type="checkbox" name="verificarRobô" id="vboot" required value="OK"><br>
+                </div>
 
                 
                 <input type="submit" value="Enviar Cadastro" id="personCadastro">
@@ -198,9 +214,9 @@
                 </div>
             </form>
         </div>
-        <p class="mensagemCadastro"></p>
+        
     </div>
-
+    <p class="mensagemCadastro"></p>
     <div class="modal-overlay02 ">
         <div class="modal">
             <form action="#" name="login" onsubmit="">

@@ -162,7 +162,7 @@ class Validator {
         let numbers = 0;
 
         for (let i = 0; charArr.length > i; i++) {
-            if (charArr[i] === charArr[i].toUpperCase() && isNaN(parseInt(charArr[i]))){
+            if (charArr[i] === charArr[i].toUpperCase() && isNaN(parseInt(charArr[i]))) {
                 uppercases++;
 
             } else if (!isNaN(parseInt(charArr[i]))) {
@@ -170,15 +170,12 @@ class Validator {
             }
 
         }
-            if (uppercases === 0 || numbers === 0) {
-                let errorMessage = `A senha precisa de um caractere maiúsculo e um número`;
+        if (uppercases === 0 || numbers === 0) {
+            let errorMessage = `A senha precisa de um caractere maiúsculo e um número`;
 
-                console.log(uppercases)
-                console.log(numbers)
+            this.printMessage(input, errorMessage);
+        }
 
-                this.printMessage(input, errorMessage);
-            }
-       
     }
     // método para imprimir mensagens de erro na tela
     printMessage(input, msg) {
@@ -196,6 +193,7 @@ class Validator {
             template.classList.remove('template');
 
             inputParent.insertBefore(template, input.nextElementSibling);
+            
         }
     }
 
@@ -217,24 +215,26 @@ const form = document.getElementById('cadastro')
 const submit = document.getElementById('personCadastro')
 
 let validator = new Validator();
-
+console.log(validator)
 submit.addEventListener('click', function (e) {
 
     e.preventDefault();
 
     validator.validate(form);
+
+    
 });
 
 const formCadastro = {
-    firstName01: firstName,
-    lastName01: lastName,
-    typeSexo01: typeSexo,
-    dateAge01: dateAge,
-    email01: email,
-    password01: password,
-    validatePassword01: validatePassword
-};
-localStorage.setItem("dev.cadastro:cadastramento", JSON.stringify(formCadastro));
+        firstName01: firstName,
+        lastName01: lastName,
+        typeSexo01: typeSexo,
+        dateAge01: dateAge,
+        email01: email,
+        password01: password,
+        validatePassword01: validatePassword
+    };
+    localStorage.setItem("dev.cadastro:cadastramento", JSON.stringify(formCadastro));
 
 
 
